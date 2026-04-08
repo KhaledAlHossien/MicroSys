@@ -11,8 +11,8 @@ using test_For_Microtik.Infrastructure;
 namespace test_For_Microtik.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20260407183046_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20260408174626_initialCreate")]
+    partial class initialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

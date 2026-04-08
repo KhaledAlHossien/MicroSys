@@ -51,7 +51,7 @@ builder.Services.AddControllers();
 // DbContext
 // ----------------------
 builder.Services.AddDbContext<AppDbContext>(opt =>
-    opt.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
+    opt.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // ----------------------
 // MediatR

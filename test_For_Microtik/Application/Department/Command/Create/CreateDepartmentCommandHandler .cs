@@ -17,7 +17,6 @@
 
         public async Task<Result<Department>> Handle(CreateDepartmentCommand request, CancellationToken cancellationToken)
         {
-            // تحقق إذا القسم موجود
             if (await _context.Departments.AnyAsync(d => d.Name == request.Name, cancellationToken))
                 return Result<Department>.Failure("Department already exists");
 
@@ -33,3 +32,4 @@
         }
     }
 }
+
