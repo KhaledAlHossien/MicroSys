@@ -13,7 +13,7 @@
                 var optionsBuilder = new DbContextOptionsBuilder<AppDbContext>();
 
                 optionsBuilder.UseSqlServer(
-                    "Server=(localdb)\\MSSQLLocalDB;Database=TestMikroTikDb;Trusted_Connection=True;MultipleActiveResultSets=true");
+                    "Data Source=Suliman-LP;Initial Catalog=TestMikroTikDb;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False;Command Timeout=30");
 
                 return new AppDbContext(optionsBuilder.Options);
             }
