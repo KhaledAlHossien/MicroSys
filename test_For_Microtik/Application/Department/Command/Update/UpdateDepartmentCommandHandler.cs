@@ -17,16 +17,15 @@
 
         public async Task<Result<Department>> Handle(UpdateDepartmentCommand request, CancellationToken cancellationToken)
         {
-            var department = await _context.Departments.FindAsync(new object[] { request.Id }, cancellationToken);
+            var department = await _context.Departments
+                .FirstOrDefaultAsync(d => d.Id == request.Id, cancellationToken);
 
             if (department == null)
                 return Result<Department>.Failure("Department not found");
 
             if (await _context.Departments.AnyAsync(d => d.Name == request.Name && d.Id != request.Id, cancellationToken))
                 return Result<Department>.Failure("Another department with the same name already exists");
-
             department.Name = request.Name;
-
             await _context.SaveChangesAsync(cancellationToken);
 
             return Result<Department>.Success(department);

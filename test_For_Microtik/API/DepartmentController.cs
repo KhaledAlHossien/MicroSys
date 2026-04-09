@@ -29,16 +29,22 @@ namespace test_For_Microtik.API
             return Ok(result.Value);
         }
 
-        [HttpPut("update")]
-        public async Task<IActionResult> Update([FromForm] UpdateDepartmentCommand command)
+        [HttpPut("{id}/update")]
+        public async Task<IActionResult> Update(int id, [FromForm] string name)
         {
+            var command = new UpdateDepartmentCommand(id, name);
+
             var result = await _mediator.Send(command);
 
             if (!result.IsSuccess)
-                return BadRequest(result.Error);
+            {
+                return BadRequest(result.Error); 
+            }
 
             return Ok(result.Value);
         }
+
+
 
         [HttpDelete("delete/{id}")]
         public async Task<IActionResult> Delete(int id)
