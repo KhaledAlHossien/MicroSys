@@ -1,6 +1,6 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using test_For_Microtik.Application.Department.Command;
+using test_For_Microtik.Application.Department.Command.Create;
 
 namespace test_For_Microtik.API
 {

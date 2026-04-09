@@ -9,7 +9,8 @@ using test_For_Microtik.Application.Interfaces;
 using test_For_Microtik.Application.Role;
 //using test_For_Microtik.Application.Roles.Validators;
 using test_For_Microtik.Application.Users;
-using test_For_Microtik.Application.Users.Command;
+using test_For_Microtik.Application.Users.Command.Create;
+
 //using test_For_Microtik.Application.Users.Validators;
 using test_For_Microtik.Infrastructure;
 using test_For_Microtik.Infrastructure.MikroTik;

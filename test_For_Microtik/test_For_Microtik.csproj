@@ -21,8 +21,17 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Application\Department\Query\" />
-    <Folder Include="Application\Role\Query\" />
+    <Folder Include="Application\Department\Command\Delete\" />
+    <Folder Include="Application\Department\Command\Update\" />
+    <Folder Include="Application\Department\Query\GetById\" />
+    <Folder Include="Application\Department\Query\GetAll\" />
+    <Folder Include="Application\Role\Command\Delete\" />
+    <Folder Include="Application\Role\Command\Update\" />
+    <Folder Include="Application\Role\Query\GetAll\" />
+    <Folder Include="Application\Role\Query\GetById\" />
+    <Folder Include="Application\Users\Command\Delete\" />
+    <Folder Include="Application\Users\Command\Update\" />
+    <Folder Include="Application\Users\Query\GetById\" />
     <Folder Include="Migrations\" />
   </ItemGroup>
 

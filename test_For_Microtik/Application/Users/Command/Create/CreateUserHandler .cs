@@ -4,9 +4,9 @@ using test_For_Microtik.Application.Common;
 using test_For_Microtik.Domain.Entities;
 using test_For_Microtik.Infrastructure;
 
-namespace test_For_Microtik.Application.Users.Command
+namespace test_For_Microtik.Application.Users.Command.Create
 {
-    public class CreateUserHandler : IRequestHandler<CreateUserCommand, Result<int>>
+    public class CreateUserHandler : IRequestHandler<CreateUserCommand, Result<User>>
     {
         private readonly AppDbContext _context;
 
@@ -15,7 +15,7 @@ namespace test_For_Microtik.Application.Users.Command
             _context = context;
         }
 
-        public async Task<Result<int>> Handle(CreateUserCommand request, CancellationToken ct)
+        public async Task<Result<User>> Handle(CreateUserCommand request, CancellationToken ct)
         {
             var user = new User
             {
@@ -29,7 +29,9 @@ namespace test_For_Microtik.Application.Users.Command
             _context.Users.Add(user);
             await _context.SaveChangesAsync(ct);
 
-            return Result<int>.Success(user.Id);
+            return Result<User>.Success(user);
         }
+
+       
     }
 }

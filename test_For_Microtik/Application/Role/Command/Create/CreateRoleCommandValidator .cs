@@ -1,4 +1,4 @@
-﻿namespace test_For_Microtik.Application.Role.Command
+﻿namespace test_For_Microtik.Application.Role.Command.Create
 {
     using FluentValidation;
 

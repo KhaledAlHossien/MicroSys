@@ -1,8 +1,8 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using test_For_Microtik.Application.Users.Command;
-using test_For_Microtik.Application.Users.Query;
+using test_For_Microtik.Application.Users.Command.Create;
+using test_For_Microtik.Application.Users.Query.GetAll;
 
 namespace test_For_Microtik.API
 {

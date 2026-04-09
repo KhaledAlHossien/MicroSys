@@ -4,7 +4,7 @@ using test_For_Microtik.Application.Common;
 using test_For_Microtik.Domain.Entities;
 using test_For_Microtik.Infrastructure;
 
-namespace test_For_Microtik.Application.Users.Query
+namespace test_For_Microtik.Application.Users.Query.GetAll
 {
     public class GetUsersHandler : IRequestHandler<GetUsersQuery, Result<List<User>>>
     {
