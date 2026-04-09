@@ -1,5 +1,4 @@
-﻿
-namespace test_For_Microtik.Application.Department.Command
+﻿namespace test_For_Microtik.Application.Department.Command.Update
 {
     using MediatR;
     using Microsoft.EntityFrameworkCore;

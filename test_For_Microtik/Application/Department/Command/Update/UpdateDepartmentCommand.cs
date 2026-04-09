@@ -1,6 +1,6 @@
-﻿namespace test_For_Microtik.Application.Department.Command
+﻿namespace test_For_Microtik.Application.Department.Command.Update
 {
-    using global::test_For_Microtik.Application.Common;
+    using test_For_Microtik.Application.Common;
     using MediatR;
     using test_For_Microtik.Application.Common;
     using test_For_Microtik.Domain.Entities;

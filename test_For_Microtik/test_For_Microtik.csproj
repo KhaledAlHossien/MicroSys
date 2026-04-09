@@ -22,10 +22,6 @@
 
   <ItemGroup>
     <Folder Include="Application\Role\Query\" />
-    <Folder Include="Application\Department\Command\Delete\" />
-    <Folder Include="Application\Department\Command\Update\" />
-    <Folder Include="Application\Department\Query\GetById\" />
-    <Folder Include="Application\Department\Query\GetAll\" />
     <Folder Include="Application\Role\Command\Delete\" />
     <Folder Include="Application\Role\Command\Update\" />
     <Folder Include="Application\Role\Query\GetAll\" />
