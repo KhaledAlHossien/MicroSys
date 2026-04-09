@@ -1,8 +1,10 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using test_For_Microtik.Application.Department.Command;
-using test_For_Microtik.Application.Department.Query;
 using test_For_Microtik.Application.Department.Command.Create;
+using test_For_Microtik.Application.Department.Command.Delete;
+using test_For_Microtik.Application.Department.Command.Update;
+using test_For_Microtik.Application.Department.Query.GetAll;
+using test_For_Microtik.Application.Department.Query.GetById;
 
 namespace test_For_Microtik.API
 {

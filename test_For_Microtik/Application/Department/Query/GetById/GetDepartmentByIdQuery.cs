@@ -1,5 +1,4 @@
-﻿
-namespace test_For_Microtik.Application.Department.Query
+﻿namespace test_For_Microtik.Application.Department.Query.GetById
 {
     using MediatR;
     using test_For_Microtik.Application.Common;
